@@ -1,0 +1,5 @@
+# Lo que no viaja en el zip de la release: `git archive --prefix=bkredirects/ -o bkredirects-<tag>.zip <tag>`
+# deja fuera estas rutas (las imágenes del README de GitHub y los metadatos del repo).
+/.github export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
