@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="ModulesBkredirectsAdmin" source-language="en-US" target-language="de-DE" datatype="plaintext">
+    <body>
+      <trans-unit id="fb2baef96c4fbe7efc41a73e531c2738">
+        <source>%count% recommendation(s) fixed.</source>
+        <target>%count% Empfehlungen behoben.</target>
+      </trans-unit>
+      <trans-unit id="07cb9ba73f123c3615cdb2f68b3b3042">
+        <source>%days% days</source>
+        <target>%days% Tage</target>
+      </trans-unit>
+      <trans-unit id="3511f1d7619f96c594c7a098c74f9cfa">
+        <source>+ %count% disabled</source>
+        <target>+ %count% deaktiviert</target>
+      </trans-unit>
+      <trans-unit id="56ca282a15a80a2b8b943923d2a4bbb4">
+        <source>301 is the right one almost always: it tells Google the page has moved for good and passes its ranking on. Use 410 for something that is gone and has no replacement.</source>
+        <target>301 ist fast immer die richtige Wahl: Sie teilt Google mit, dass die Seite dauerhaft umgezogen ist, und gibt ihr Ranking weiter. Verwenden Sie 410 für etwas, das entfernt wurde und keinen Ersatz hat.</target>
+      </trans-unit>
+      <trans-unit id="80a5636ea8db295247ca99cab4103f08">
+        <source>301 · Moved permanently</source>
+        <target>301 · Dauerhaft verschoben</target>
+      </trans-unit>
+      <trans-unit id="3fbb4d207ea9ba9452e930ba6984ccee">
+        <source>302 · Moved temporarily</source>
+        <target>302 · Vorübergehend verschoben</target>
+      </trans-unit>
+      <trans-unit id="44d6677be8e4a79cfbcf4b7f88ca265e">
+        <source>303 · See other</source>
+        <target>303 · Siehe andere Seite</target>
+      </trans-unit>
+      <trans-unit id="c487ab5a002b6c4524284e3c899caeee">
+        <source>307 · Temporary, keeps the method</source>
+        <target>307 · Vorübergehend, behält die Methode bei</target>
+      </trans-unit>
+      <trans-unit id="0f0b3af0fb09ce4d9a20502cc9622138">
+        <source>308 · Permanent, keeps the method</source>
+        <target>308 · Dauerhaft, behält die Methode bei</target>
+      </trans-unit>
+      <trans-unit id="f33b3cc7825d58b95b3f996c8b12a7df">
+        <source>410 · Gone for good</source>
+        <target>410 · Endgültig entfernt</target>
+      </trans-unit>
+      <trans-unit id="85e9291113dd7c44ed0460935fce9ab3">
+        <source>451 · Unavailable for legal reasons</source>
+        <target>451 · Aus rechtlichen Gründen nicht verfügbar</target>
+      </trans-unit>
+      <trans-unit id="f4d04e8089e74b1622483ec693d25cb5">
+        <source>A URL</source>
+        <target>Eine URL</target>
+      </trans-unit>
+      <trans-unit id="8ee426f699ab8a246adfca10929d1a2a">
+        <source>A different destination for each language of the same URL.</source>
+        <target>Ein eigenes Ziel für jede Sprache derselben URL.</target>
+      </trans-unit>
+      <trans-unit id="b8f5ad48e737c92aed9cfcdc926d6f2c">
+        <source>A path of this shop (/new-page) or a full address of any site.</source>
+        <target>Ein Pfad dieses Shops (/new-page) oder eine vollständige Adresse einer beliebigen Website.</target>
+      </trans-unit>
+      <trans-unit id="004bf6c9a40003140292e97330236c53">
+        <source>Action</source>
+        <target>Aktion</target>
+      </trans-unit>
+      <trans-unit id="4d3d769b812b6faa6b76e1a8abaece2d">
+        <source>Active</source>
+        <target>Aktiv</target>
+      </trans-unit>
+      <trans-unit id="b5b16fdda5b5e5f9132b49e677af9883">
+        <source>Active rules</source>
+        <target>Aktive Regeln</target>
+      </trans-unit>
+      <trans-unit id="dd593f8a542ab628cbba98c709255e60">
+        <source>Add a rule</source>
+        <target>Regel hinzufügen</target>
+      </trans-unit>
+      <trans-unit id="7fd063c7c51e747db9c77c095bd8bb69">
+        <source>Add-on installed: version %version%.</source>
+        <target>Erweiterung installiert: Version %version%.</target>
+      </trans-unit>
+      <trans-unit id="abdffc07f137a3b4b3e4df13d2cafee4">
+        <source>All languages</source>
+        <target>Alle Sprachen</target>
+      </trans-unit>
+      <trans-unit id="804ccd6219996d12eda865d1c0707423">
+        <source>All shops</source>
+        <target>Alle Shops</target>
+      </trans-unit>
+      <trans-unit id="f5ccadfc7734d3a5818e229f8fd28f0d">
+        <source>Applies to</source>
+        <target>Gilt für</target>
+      </trans-unit>
+      <trans-unit id="9639e32cab248434a17ab32237cb3b71">
+        <source>Apply</source>
+        <target>Anwenden</target>
+      </trans-unit>
+      <trans-unit id="75eb667ee60de850db793200155a0a98">
+        <source>Apply redirect rules</source>
+        <target>Weiterleitungsregeln anwenden</target>
+      </trans-unit>
+      <trans-unit id="76bac355d669067b8a63b1e2248f3f97">
+        <source>Apply the suggested destination to the selected URLs</source>
+        <target>Das vorgeschlagene Ziel auf die ausgewählten URLs anwenden</target>
+      </trans-unit>
+      <trans-unit id="cff98a6515d796eb09864d47ec7339b6">
+        <source>Applying suggested destinations is a PRO feature.</source>
+        <target>Das Anwenden vorgeschlagener Ziele ist eine PRO-Funktion.</target>
+      </trans-unit>
+      <trans-unit id="5fa30f06c12c47c773d526f31c9f24e0">
+        <source>Automatic, URL change</source>
+        <target>Automatisch, URL-Änderung</target>
+      </trans-unit>
+      <trans-unit id="a8136fda916b4e5ad8165f0873c48b6a">
+        <source>Automatic, on delete</source>
+        <target>Automatisch, beim Löschen</target>
+      </trans-unit>
+      <trans-unit id="193002765aa706a35e7baaffd06b4947">
+        <source>Automations</source>
+        <target>Automatisierungen</target>
+      </trans-unit>
+      <trans-unit id="5013eb768bde64eb95584368d09f06ac">
+        <source>BK SEO Redirects</source>
+        <target>BK SEO Redirects</target>
+      </trans-unit>
+      <trans-unit id="49ec4f08946db463f8b3789788db3398">
+        <source>BK SEO Redirects Free</source>
+        <target>BK SEO Redirects Kostenlos</target>
+      </trans-unit>
+      <trans-unit id="ffd44ab5cdab5b5faf822dbc9fca73db">
+        <source>BK SEO Redirects PRO</source>
+        <target>BK SEO Redirects PRO</target>
+      </trans-unit>
+      <trans-unit id="36c5a6d5c745e60bbbfe75efa48f0609">
+        <source>Bot visits, not counted</source>
+        <target>Besuche von Bots, nicht mitgezählt</target>
+      </trans-unit>
+      <trans-unit id="cd4f10fcba234f0e8b2f60a490c306e6">
+        <source>Bots</source>
+        <target>Bots</target>
+      </trans-unit>
+      <trans-unit id="dcf543e37139e2280bd68e619fcaffeb">
+        <source>Bots on a 404</source>
+        <target>Bots auf einer 404-Seite</target>
+      </trans-unit>
+      <trans-unit id="bcca26660719bb8409e0f322afa75022">
+        <source>Bots that hit a 404</source>
+        <target>Bots, die auf eine 404-Seite gestoßen sind</target>
+      </trans-unit>
+      <trans-unit id="1be6f9eb563f3bf85c78b4219bf09de9">
+        <source>Brand</source>
+        <target>Marke</target>
+      </trans-unit>
+      <trans-unit id="20bcaf30f8cc4881b0fccd4115932135">
+        <source>Brands page</source>
+        <target>Markenseite</target>
+      </trans-unit>
+      <trans-unit id="34ede9ce8d67ddf12e98ca7e85ecd044">
+        <source>Broken URLs to review</source>
+        <target>Defekte URLs zum Prüfen</target>
+      </trans-unit>
+      <trans-unit id="ac37b115bc4e914c9ab63bd4a1c1746a">
+        <source>CMS category</source>
+        <target>CMS-Kategorie</target>
+      </trans-unit>
+      <trans-unit id="622f3c75de9f3481ffc58c1f292c1c2b">
+        <source>CMS page</source>
+        <target>CMS-Seite</target>
+      </trans-unit>
+      <trans-unit id="ea4788705e6873b424c65e91c2846b19">
+        <source>Cancel</source>
+        <target>Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="3adbdb3ac060038aa0e6e6c138ef9873">
+        <source>Category</source>
+        <target>Kategorie</target>
+      </trans-unit>
+      <trans-unit id="f4ec5f57bd4d31b803312d873be40da9">
+        <source>Change</source>
+        <target>Ändern</target>
+      </trans-unit>
+      <trans-unit id="9b5aedc528099256dd2c5e83fd03b480">
+        <source>Choose where the rule redirects to.</source>
+        <target>Wählen Sie, wohin die Regel weiterleitet.</target>
+      </trans-unit>
+      <trans-unit id="ca0dbad92a874b2f69b549293387925e">
+        <source>Code</source>
+        <target>Code</target>
+      </trans-unit>
+      <trans-unit id="ad119d5ea30f6c26b58e0af5bc43c9fe">
+        <source>Contact support</source>
+        <target>Support kontaktieren</target>
+      </trans-unit>
+      <trans-unit id="fc0755f4776ad2a43464acfb80540287">
+        <source>Counted from the last time it returned 404.</source>
+        <target>Gezählt ab dem letzten Mal, an dem sie 404 zurückgegeben hat.</target>
+      </trans-unit>
+      <trans-unit id="ccee2cbec967e636d931fe9909b28d4e">
+        <source>Create rule</source>
+        <target>Regel erstellen</target>
+      </trans-unit>
+      <trans-unit id="c8e6a7ed1489c036564b6bc24c92cca4">
+        <source>Created by</source>
+        <target>Erstellt von</target>
+      </trans-unit>
+      <trans-unit id="2938c7f7e560ed972f8a4f68e80ff834">
+        <source>Dashboard</source>
+        <target>Übersicht</target>
+      </trans-unit>
+      <trans-unit id="03727ac48595a24daed975559c944a44">
+        <source>Day</source>
+        <target>Tag</target>
+      </trans-unit>
+      <trans-unit id="d3b206d196cd6be3a2764c1fb90b200f">
+        <source>Delete selected</source>
+        <target>Auswahl löschen</target>
+      </trans-unit>
+      <trans-unit id="171322029b260f77c88c0743cff4731c">
+        <source>Delete the selected rules?</source>
+        <target>Die ausgewählten Regeln löschen?</target>
+      </trans-unit>
+      <trans-unit id="12007e1d59f4d09c87dbe2c438256244">
+        <source>Destination</source>
+        <target>Ziel</target>
+      </trans-unit>
+      <trans-unit id="17e3f7a513c2175c172336b5cfa48ea8">
+        <source>Disable rule</source>
+        <target>Regel deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="ab7fd6e250b64a46027a996088fdff74">
+        <source>Disable selection</source>
+        <target>Auswahl deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="88b847293722f4a97fad3818884e5196">
+        <source>Disabled product that still gets visits</source>
+        <target>Deaktiviertes Produkt, das noch Besuche erhält</target>
+      </trans-unit>
+      <trans-unit id="9f2a073b0be2c0d30169eb6367318c9f">
+        <source>Download BK SEO Redirects PRO</source>
+        <target>BK SEO Redirects PRO herunterladen</target>
+      </trans-unit>
+      <trans-unit id="65ba432b55ca72d240628e0bb981c6b0">
+        <source>Each URL that returns 404 is noted once, with how many visitors and bots reach it. The recommendations come from here.</source>
+        <target>Jede URL, die 404 zurückgibt, wird einmal erfasst, mit der Anzahl der Besucher und Bots, die sie aufrufen. Daraus entstehen die Empfehlungen.</target>
+      </trans-unit>
+      <trans-unit id="2f47901af231c2bfae1e437fe5f43397">
+        <source>Edit rule</source>
+        <target>Regel bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="fdece3826de9c67e45e4bf6976f46173">
+        <source>Edit rule #%id%</source>
+        <target>Regel #%id% bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="ede4759c9afae620fd586628789fa304">
+        <source>Enable selection</source>
+        <target>Auswahl aktivieren</target>
+      </trans-unit>
+      <trans-unit id="79cf6c29359375e26b5a4f2bdc86dd27">
+        <source>Every URL here once had visitors or a place in Google. Send it to the right page and you keep both: the visitor lands somewhere useful and the ranking that URL earned passes to its new address.</source>
+        <target>Jede URL hier hatte einmal Besucher oder einen Platz bei Google. Leiten Sie sie auf die richtige Seite weiter und Sie behalten beides: Der Besucher landet an einer sinnvollen Stelle und das Ranking, das die URL erarbeitet hat, geht auf ihre neue Adresse über.</target>
+      </trans-unit>
+      <trans-unit id="c4dd205da5c23f16abd4af21bc6c4b6d">
+        <source>Every URL that starts like this</source>
+        <target>Jede URL, die so beginnt</target>
+      </trans-unit>
+      <trans-unit id="5c27fa336cc2c62264ffeb573b5d382f">
+        <source>Everything is on: suggested destinations, fixing in bulk, automations, import and export, patterns, URL parameters and rules per language.</source>
+        <target>Alles ist aktiv: vorgeschlagene Ziele, Korrektur in einem Schritt, Automatisierungen, Import und Export, Muster, URL-Parameter und Regeln pro Sprache.</target>
+      </trans-unit>
+      <trans-unit id="f2a41215dbe6785335a262db8c1ecda0">
+        <source>Exactly this URL</source>
+        <target>Genau diese URL</target>
+      </trans-unit>
+      <trans-unit id="4736251a0a1065094b602981ac116ec1">
+        <source>Example: /old-blog/ catches /old-blog/any-post too.</source>
+        <target>Beispiel: /old-blog/ erfasst auch /old-blog/any-post.</target>
+      </trans-unit>
+      <trans-unit id="e2c4b2582c23b7e72c7739c7884985c0">
+        <source>Example: /shoes/*.html. Each * matches any text and can be reused in a destination URL as $1, $2…</source>
+        <target>Beispiel: /shoes/*.html. Jedes * steht für beliebigen Text und lässt sich in einer Ziel-URL als $1, $2… wiederverwenden.</target>
+      </trans-unit>
+      <trans-unit id="90d17900d5234301c62e2f54b30fc4a8">
+        <source>Example: ^/p/([0-9]+)$. Use the groups in a destination URL as $1, $2…</source>
+        <target>Beispiel: ^/p/([0-9]+)$. Verwenden Sie die Gruppen in einer Ziel-URL als $1, $2…</target>
+      </trans-unit>
+      <trans-unit id="0095a9fa74d1713e43e370a7d7846224">
+        <source>Export</source>
+        <target>Exportieren</target>
+      </trans-unit>
+      <trans-unit id="5473e6c22514504ebb4377a5bd16b03a">
+        <source>Forget a URL after</source>
+        <target>URL vergessen nach</target>
+      </trans-unit>
+      <trans-unit id="5da618e8e4b89c66fe86e32cdafde142">
+        <source>From</source>
+        <target>Von</target>
+      </trans-unit>
+      <trans-unit id="8bc616138b29f0b0087b7fc384e8f3d6">
+        <source>Get the PRO licence</source>
+        <target>PRO-Lizenz erwerben</target>
+      </trans-unit>
+      <trans-unit id="a1f2061c8613565d6bab38a126051a35">
+        <source>Get the update</source>
+        <target>Update holen</target>
+      </trans-unit>
+      <trans-unit id="20aee7b2d6c47978c5b22a9b7ef39083">
+        <source>Gone, no destination</source>
+        <target>Entfernt, kein Ziel</target>
+      </trans-unit>
+      <trans-unit id="2ddf8a5e8b8e9212c3f8a5fc2fd720d7">
+        <source>Guides and news</source>
+        <target>Anleitungen und Neuigkeiten</target>
+      </trans-unit>
+      <trans-unit id="560435f04c8bf6272da82d030009a24d">
+        <source>HTTP codes 303, 308 and 451 are a PRO feature.</source>
+        <target>Die HTTP-Codes 303, 308 und 451 sind eine PRO-Funktion.</target>
+      </trans-unit>
+      <trans-unit id="655d20c1ca69519ca647684edbb2db35">
+        <source>High</source>
+        <target>Hoch</target>
+      </trans-unit>
+      <trans-unit id="7b19b37e7fc3dfe3c3e1ad5b84c7f565">
+        <source>Home page</source>
+        <target>Startseite</target>
+      </trans-unit>
+      <trans-unit id="f54a5b3e14772d76b8acdb787887f878">
+        <source>How sure the module is about this destination</source>
+        <target>Wie sicher sich das Modul bei diesem Ziel ist</target>
+      </trans-unit>
+      <trans-unit id="71bb9ba24775cf20e60e2d7f1ecda059">
+        <source>How to switch to PRO</source>
+        <target>So wechseln Sie zu PRO</target>
+      </trans-unit>
+      <trans-unit id="b718adec73e04ce3ec720dd11a06a308">
+        <source>ID</source>
+        <target>ID</target>
+      </trans-unit>
+      <trans-unit id="fd038fc7f319e48f3115d92bf5bdbef9">
+        <source>Ignore</source>
+        <target>Ignorieren</target>
+      </trans-unit>
+      <trans-unit id="d96143ba1b15645919cea00ec9d1be62">
+        <source>Ignored</source>
+        <target>Ignoriert</target>
+      </trans-unit>
+      <trans-unit id="f854974b7b4325d57b4c2f4c4f52c87b">
+        <source>Import and export</source>
+        <target>Import und Export</target>
+      </trans-unit>
+      <trans-unit id="89bc36b2c28a0620f52727a40d691ee7">
+        <source>Import from a CSV file</source>
+        <target>Aus einer CSV-Datei importieren</target>
+      </trans-unit>
+      <trans-unit id="53dd26562db3bf663b540806df8f7d6e">
+        <source>Import from other modules</source>
+        <target>Aus anderen Modulen importieren</target>
+      </trans-unit>
+      <trans-unit id="858a2b552953bc182248fe9374646398">
+        <source>Imported</source>
+        <target>Importiert</target>
+      </trans-unit>
+      <trans-unit id="fdb40ee584c8e10db770a6b187ac3a53">
+        <source>Imported from ets_seo</source>
+        <target>Aus ets_seo importiert</target>
+      </trans-unit>
+      <trans-unit id="1cab6713637722d5c1275a8c2b1c07a9">
+        <source>Importing is only available in PRO. Bring in the redirects you already have, from a spreadsheet or from another module, in one go, and export them whenever you like.</source>
+        <target>Der Import ist nur in PRO verfügbar. Übernehmen Sie Ihre bestehenden Weiterleitungen aus einer Tabelle oder aus einem anderen Modul in einem Schritt und exportieren Sie sie, wann immer Sie möchten.</target>
+      </trans-unit>
+      <trans-unit id="8db110eea93575ee2621051548adedbe">
+        <source>Install it in Modules</source>
+        <target>Unter Module installieren</target>
+      </trans-unit>
+      <trans-unit id="3f617ad2990eaf6bc5974adf51a913a4">
+        <source>Invalid HTTP code.</source>
+        <target>Ungültiger HTTP-Code.</target>
+      </trans-unit>
+      <trans-unit id="a9478c71266a318431162168da133bd2">
+        <source>Invalid match type.</source>
+        <target>Ungültiger Übereinstimmungstyp.</target>
+      </trans-unit>
+      <trans-unit id="ca2c91b0879184a4b29e5dae0eff3591">
+        <source>Invalid query string mode.</source>
+        <target>Ungültiger Parametermodus.</target>
+      </trans-unit>
+      <trans-unit id="f1c8378941319e9657aaa172e6e55724">
+        <source>Invalid recommendation key</source>
+        <target>Ungültiger Empfehlungsschlüssel</target>
+      </trans-unit>
+      <trans-unit id="bfa32d43ac3e508fd6eccd953c63c3e3">
+        <source>It is in My licences, next to this module.</source>
+        <target>Sie finden es unter „Meine Lizenzen und Downloads“, neben diesem Modul.</target>
+      </trans-unit>
+      <trans-unit id="5ee05e5e093fb6e237f03a3d8f1875e6">
+        <source>Keep the log between 1 and 3650 days.</source>
+        <target>Halten Sie das Protokoll zwischen 1 und 3650 Tagen.</target>
+      </trans-unit>
+      <trans-unit id="4994a8ffeba4ac3140beb89e8d41f174">
+        <source>Language</source>
+        <target>Sprache</target>
+      </trans-unit>
+      <trans-unit id="5e5914912e8d2f2765525840acf98bea">
+        <source>Last visit</source>
+        <target>Letzter Besuch</target>
+      </trans-unit>
+      <trans-unit id="bb5cf8edf3e6c94e11597e754cefaa15">
+        <source>Latest blog posts</source>
+        <target>Neueste Blogartikel</target>
+      </trans-unit>
+      <trans-unit id="5dda350d0c7b38086ff1a49afef83541">
+        <source>Leave these paths alone</source>
+        <target>Diese Pfade nicht anrühren</target>
+      </trans-unit>
+      <trans-unit id="1f5414431dc79f04cefc86445712802f">
+        <source>License and help</source>
+        <target>Lizenz und Hilfe</target>
+      </trans-unit>
+      <trans-unit id="28d0edd045e05cf5af64e35ae0c4c6ef">
+        <source>Low</source>
+        <target>Niedrig</target>
+      </trans-unit>
+      <trans-unit id="a0d5ab1ffd82ed4b0404f2db433ea10e">
+        <source>Match the URL only when it has no parameters, or drop them on the way to the new page.</source>
+        <target>Die URL nur ohne Parameter erkennen oder die Parameter auf dem Weg zur neuen Seite verwerfen.</target>
+      </trans-unit>
+      <trans-unit id="2f0d2af20889b187fa14823639b1ade4">
+        <source>Matching only without parameters, or dropping them, is a PRO feature.</source>
+        <target>Nur ohne Parameter erkennen oder sie verwerfen ist eine PRO-Funktion.</target>
+      </trans-unit>
+      <trans-unit id="87f8a6ab85c9ced3702b4ea641ad4bb5">
+        <source>Medium</source>
+        <target>Mittel</target>
+      </trans-unit>
+      <trans-unit id="9c62fbb5e8bc787487b4de5f3d9ddb5c">
+        <source>More from BK Modules</source>
+        <target>Mehr von BK Modules</target>
+      </trans-unit>
+      <trans-unit id="f4f2e62f3c20a71535b4c0574bc91cc7">
+        <source>Most used rules</source>
+        <target>Meistgenutzte Regeln</target>
+      </trans-unit>
+      <trans-unit id="dc595aa2d05d211629633762f27a53e0">
+        <source>My licenses and downloads</source>
+        <target>Meine Lizenzen und Downloads</target>
+      </trans-unit>
+      <trans-unit id="39567c78b6d13fd92f369db9977a97fb">
+        <source>New rule</source>
+        <target>Neue Regel</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>Nein</target>
+      </trans-unit>
+      <trans-unit id="fa9d37af385389174201494094e3e88d">
+        <source>No 404 recorded yet.</source>
+        <target>Noch keine 404 erfasst.</target>
+      </trans-unit>
+      <trans-unit id="ab7e8eff37090718b6e603cf493c5a6c">
+        <source>No clear match</source>
+        <target>Keine eindeutige Übereinstimmung</target>
+      </trans-unit>
+      <trans-unit id="3e78902afe6516783c6f08ad061ab4a7">
+        <source>No destination</source>
+        <target>Kein Ziel</target>
+      </trans-unit>
+      <trans-unit id="085d30b585fd086d03776136f8ee91dc">
+        <source>No destination: visitors see the page-not-found page, and Google learns this URL is gone on purpose and drops it sooner.</source>
+        <target>Kein Ziel: Besucher sehen die Seite „Seite nicht gefunden“, und Google erfährt, dass diese URL absichtlich entfernt wurde, und nimmt sie schneller heraus.</target>
+      </trans-unit>
+      <trans-unit id="23955650d2f9b742dce7616c471cc978">
+        <source>No rule has redirected anyone yet.</source>
+        <target>Noch keine Regel hat jemanden weitergeleitet.</target>
+      </trans-unit>
+      <trans-unit id="a1ec68813e777eb42128848bc19568cd">
+        <source>No visits in the last %days% days: you can disable it.</source>
+        <target>Keine Besuche in den letzten %days% Tagen: Sie können sie deaktivieren.</target>
+      </trans-unit>
+      <trans-unit id="6af7ba12dc44855013ada480e7c445fc">
+        <source>No visits recorded in this period yet. The chart fills in as visitors reach redirected or missing URLs.</source>
+        <target>In diesem Zeitraum wurden noch keine Besuche erfasst. Das Diagramm füllt sich, sobald Besucher weitergeleitete oder fehlende URLs aufrufen.</target>
+      </trans-unit>
+      <trans-unit id="3b0649c72650c313a357338dcdfb64ec">
+        <source>Note</source>
+        <target>Notiz</target>
+      </trans-unit>
+      <trans-unit id="dc30bf89548742d6716581deb415eda7">
+        <source>Nothing found. Try another word or the ID.</source>
+        <target>Nichts gefunden. Versuchen Sie es mit einem anderen Wort oder der ID.</target>
+      </trans-unit>
+      <trans-unit id="975639c1cb4eb60ab30ebf24f4db4386">
+        <source>Nothing to fix right now.</source>
+        <target>Im Moment gibt es nichts zu beheben.</target>
+      </trans-unit>
+      <trans-unit id="6c9ab3bc2a9d5dd420201dd3093721fc">
+        <source>Old URL</source>
+        <target>Alte URL</target>
+      </trans-unit>
+      <trans-unit id="7637e70c5b960e7f38a13157af8efb5f">
+        <source>On the module page at bkmodules.com.</source>
+        <target>Auf der Modulseite bei bkmodules.com.</target>
+      </trans-unit>
+      <trans-unit id="c2d75c4cb1d044c5c89a80b9eed6cf88">
+        <source>One path per line, starting with a slash. Every URL that starts like this is neither redirected nor recorded.</source>
+        <target>Ein Pfad pro Zeile, beginnend mit einem Schrägstrich. Jede URL, die so beginnt, wird weder weitergeleitet noch erfasst.</target>
+      </trans-unit>
+      <trans-unit id="9da1fef0e992b6c4208e876a8ee1e50e">
+        <source>One rule for a whole folder, a pattern with * or a regular expression: /old-blog/* goes to /blog/ in one go.</source>
+        <target>Eine Regel für einen ganzen Ordner, ein Muster mit * oder ein regulärer Ausdruck: /old-blog/* geht in einem Schritt auf /blog/.</target>
+      </trans-unit>
+      <trans-unit id="706d49b2b89e05f45f1ae308bddb11ef">
+        <source>One word per line. A visit whose browser identification contains any of them is counted as a bot, apart from real visitors.</source>
+        <target>Ein Wort pro Zeile. Ein Besuch, dessen Browserkennung eines davon enthält, wird als Bot gezählt, getrennt von echten Besuchern.</target>
+      </trans-unit>
+      <trans-unit id="f45875a7448f4d5c795dc5fec32ad832">
+        <source>Only with exactly these parameters</source>
+        <target>Nur mit genau diesen Parametern</target>
+      </trans-unit>
+      <trans-unit id="a84485fb45ed8ad2af482ae0f7e27331">
+        <source>Open My licences</source>
+        <target>„Meine Lizenzen und Downloads“ öffnen</target>
+      </trans-unit>
+      <trans-unit id="4cc5ca399c9c71a84c69cfc612251805">
+        <source>Other BK Modules modules</source>
+        <target>Weitere Module von BK Modules</target>
+      </trans-unit>
+      <trans-unit id="11339671b05634ba5e1b57b999b4138d">
+        <source>PRO is an add-on module that installs next to this one and adds its features to these same screens. Your rules and log stay as they are.</source>
+        <target>PRO ist ein Erweiterungsmodul, das neben diesem installiert wird und seine Funktionen in genau diesen Ansichten ergänzt. Ihre Regeln und Ihr Protokoll bleiben, wie sie sind.</target>
+      </trans-unit>
+      <trans-unit id="95f8935c1a3ed351bacfcba79fcdcc22">
+        <source>Page not found that still gets visits</source>
+        <target>Nicht gefundene Seite, die noch Besuche erhält</target>
+      </trans-unit>
+      <trans-unit id="71031d876eb04bc2adf4efa5c9cca2f3">
+        <source>Parameters after ?</source>
+        <target>Parameter nach ?</target>
+      </trans-unit>
+      <trans-unit id="d784da786e13bd555642a64838c89787">
+        <source>Paste the whole address or just the part after the domain. Copy it from Google Search Console, an old link or the 404 log.</source>
+        <target>Fügen Sie die ganze Adresse oder nur den Teil nach der Domain ein. Kopieren Sie sie aus der Google Search Console, einem alten Link oder dem 404-Protokoll.</target>
+      </trans-unit>
+      <trans-unit id="27b789818994b74bddce79c9053ba1fc">
+        <source>Patterns are a PRO feature.</source>
+        <target>Muster sind eine PRO-Funktion.</target>
+      </trans-unit>
+      <trans-unit id="1901606ea069a83dc7beea17881ef95a">
+        <source>Period</source>
+        <target>Zeitraum</target>
+      </trans-unit>
+      <trans-unit id="c47e0741b564060ef31014ac1948af6d">
+        <source>Pointing to a product, category or page keeps working when its URL changes later.</source>
+        <target>Wenn Sie auf ein Produkt, eine Kategorie oder eine Seite verweisen, funktioniert die Regel weiter, auch wenn sich deren URL später ändert.</target>
+      </trans-unit>
+      <trans-unit id="17a4f3bfa9cd04d98bfff81afd6fae38">
+        <source>PrestaShop forgets the old address the moment a product is deleted or its URL changes, and whoever arrives from Google or an old link finds a 404. With these on, the module creates the redirect at that same moment, so the visit and the ranking go to the right page.</source>
+        <target>PrestaShop vergisst die alte Adresse in dem Moment, in dem ein Produkt gelöscht wird oder sich seine URL ändert, und wer von Google oder über einen alten Link kommt, landet auf einer 404-Seite. Wenn diese Optionen aktiv sind, legt das Modul die Weiterleitung im selben Moment an, sodass Besuch und Ranking auf die richtige Seite gehen.</target>
+      </trans-unit>
+      <trans-unit id="deb10517653c255364175796ace3553f">
+        <source>Product</source>
+        <target>Produkt</target>
+      </trans-unit>
+      <trans-unit id="b5894c26e384d562d27abb066be0c539">
+        <source>Recognise as a bot</source>
+        <target>Als Bot erkennen</target>
+      </trans-unit>
+      <trans-unit id="c76e3867213cff8946148c6510af0736">
+        <source>Recommendation</source>
+        <target>Empfehlung</target>
+      </trans-unit>
+      <trans-unit id="a4d0280aca2328881d94e8d70fba3158">
+        <source>Recommendation not found</source>
+        <target>Empfehlung nicht gefunden</target>
+      </trans-unit>
+      <trans-unit id="5259ae4afb5996ff48788b2fa720114c">
+        <source>Recommendations</source>
+        <target>Empfehlungen</target>
+      </trans-unit>
+      <trans-unit id="4d55c14646a3c11cc54cf9ca8a8d2d0a">
+        <source>Record pages not found</source>
+        <target>Nicht gefundene Seiten erfassen</target>
+      </trans-unit>
+      <trans-unit id="add3f59161a808a763fde4a0a6534ea1">
+        <source>Redirect chain</source>
+        <target>Weiterleitungskette</target>
+      </trans-unit>
+      <trans-unit id="1cc2df3ad36d20dbb140891b1d4c6044">
+        <source>Redirect loop</source>
+        <target>Weiterleitungsschleife</target>
+      </trans-unit>
+      <trans-unit id="f97e743b64b2426b85d3d243d56e8edb">
+        <source>Redirect old URLs to products, categories or any page, log every 404 and keep your rankings when you delete or rename products.</source>
+        <target>Leiten Sie alte URLs auf Produkte, Kategorien oder beliebige Seiten weiter, erfassen Sie jede 404 und behalten Sie Ihr Ranking, wenn Sie Produkte löschen oder umbenennen.</target>
+      </trans-unit>
+      <trans-unit id="5141190a23c0dbd137d314513fadb414">
+        <source>Redirected</source>
+        <target>Weitergeleitet</target>
+      </trans-unit>
+      <trans-unit id="862099f29a6eaabf7484671997f4d3c1">
+        <source>Redirects and 404 log</source>
+        <target>Weiterleitungen und 404-Protokoll</target>
+      </trans-unit>
+      <trans-unit id="0c49a7a7a3887766b5de7ee60fdb6b7b">
+        <source>Regular expression</source>
+        <target>Regulärer Ausdruck</target>
+      </trans-unit>
+      <trans-unit id="b908bbf28a22d9505481a6f494d1fac6">
+        <source>Rule disabled.</source>
+        <target>Regel deaktiviert.</target>
+      </trans-unit>
+      <trans-unit id="bd2d4eebe9040d7f3520885013632a7d">
+        <source>Rule enabled.</source>
+        <target>Regel aktiviert.</target>
+      </trans-unit>
+      <trans-unit id="038bba4291407476cd68fe31aef88706">
+        <source>Rule pointing to a page that is gone</source>
+        <target>Regel, die auf eine nicht mehr vorhandene Seite zeigt</target>
+      </trans-unit>
+      <trans-unit id="ccaaa790e324e0f8643f3c8230dc716a">
+        <source>Rule without visits for 180 days</source>
+        <target>Regel ohne Besuche seit 180 Tagen</target>
+      </trans-unit>
+      <trans-unit id="1f4da964f8eab62e96e8cfe406e44364">
+        <source>Rules</source>
+        <target>Regeln</target>
+      </trans-unit>
+      <trans-unit id="3a3bc604d24653ebe4131d86cc9b9c93">
+        <source>Rules for one language are a PRO feature.</source>
+        <target>Regeln für eine einzelne Sprache sind eine PRO-Funktion.</target>
+      </trans-unit>
+      <trans-unit id="90d3d98a38ee29cebd09bb8b3231de21">
+        <source>SEO Redirects</source>
+        <target>SEO-Weiterleitungen</target>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Speichern</target>
+      </trans-unit>
+      <trans-unit id="1f682bf76b60e5ababda381d4fe0685b">
+        <source>Searching…</source>
+        <target>Suche läuft…</target>
+      </trans-unit>
+      <trans-unit id="5581c7b52ed4340dd3f27c50d383d5fd">
+        <source>See PRO</source>
+        <target>PRO ansehen</target>
+      </trans-unit>
+      <trans-unit id="fc88fd84957009b6b21bde7a5f7124ca">
+        <source>See the figures day by day</source>
+        <target>Die Zahlen Tag für Tag ansehen</target>
+      </trans-unit>
+      <trans-unit id="e0626222614bdee31951d84c64e5e9ff">
+        <source>Select</source>
+        <target>Auswählen</target>
+      </trans-unit>
+      <trans-unit id="4c41e0bd957698b58100a5c687d757d9">
+        <source>Select all</source>
+        <target>Alle auswählen</target>
+      </trans-unit>
+      <trans-unit id="e363aa57a26dab2c4c020a5df0276840">
+        <source>Send them to</source>
+        <target>Weiterleiten an</target>
+      </trans-unit>
+      <trans-unit id="9a7e58ee13cb727cb7c4acc68f4cafe5">
+        <source>Settings saved.</source>
+        <target>Einstellungen gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="9f82518d468b9fee614fcc92f76bb163">
+        <source>Shop</source>
+        <target>Shop</target>
+      </trans-unit>
+      <trans-unit id="1b5ed5af50ae9ae031c860354c718c04">
+        <source>Suggested destination</source>
+        <target>Vorgeschlagenes Ziel</target>
+      </trans-unit>
+      <trans-unit id="ec136b444eede3bc85639fac0dd06229">
+        <source>Supplier</source>
+        <target>Lieferant</target>
+      </trans-unit>
+      <trans-unit id="b3f98f257bb7cb0c2162d6218e47e573">
+        <source>Suppliers page</source>
+        <target>Lieferantenseite</target>
+      </trans-unit>
+      <trans-unit id="e1d21502dd073e2e121307055bcb1709">
+        <source>The home page cannot be redirected.</source>
+        <target>Die Startseite kann nicht weitergeleitet werden.</target>
+      </trans-unit>
+      <trans-unit id="76ab6c81133e3493e8dadf59e7712738">
+        <source>The latest published version could not be checked right now.</source>
+        <target>Die neueste veröffentlichte Version konnte gerade nicht geprüft werden.</target>
+      </trans-unit>
+      <trans-unit id="aca17bae1f13bdea04ec04bb1168c75c">
+        <source>The rule could not be saved</source>
+        <target>Die Regel konnte nicht gespeichert werden</target>
+      </trans-unit>
+      <trans-unit id="4387ffe6913420c6403ef112e8d4d34a">
+        <source>The rule could not be saved.</source>
+        <target>Die Regel konnte nicht gespeichert werden.</target>
+      </trans-unit>
+      <trans-unit id="b16d54e0b5bb169847c651ed502ac04d">
+        <source>The rule was not saved. Check the fields marked below.</source>
+        <target>Die Regel wurde nicht gespeichert. Prüfen Sie die unten markierten Felder.</target>
+      </trans-unit>
+      <trans-unit id="de10a6ec2dc4693e4fcf3cd5d5b281c8">
+        <source>The rule would redirect to itself.</source>
+        <target>Die Regel würde auf sich selbst weiterleiten.</target>
+      </trans-unit>
+      <trans-unit id="af8b82df9f47e1910b3e6a449ccdf1e5">
+        <source>The source URL is required.</source>
+        <target>Die Quell-URL ist erforderlich.</target>
+      </trans-unit>
+      <trans-unit id="11bf9b123badc59c4649838eba8afa95">
+        <source>The source URL is too long.</source>
+        <target>Die Quell-URL ist zu lang.</target>
+      </trans-unit>
+      <trans-unit id="8bb04e68fbb32ef872340d31f346db6c">
+        <source>The target does not exist.</source>
+        <target>Das Ziel existiert nicht.</target>
+      </trans-unit>
+      <trans-unit id="ba7d5da91d5b1ba7d26bba220b9697ee">
+        <source>The target must be an absolute URL or a path starting with /.</source>
+        <target>Das Ziel muss eine absolute URL oder ein Pfad sein, der mit / beginnt.</target>
+      </trans-unit>
+      <trans-unit id="5a0e2baefa7674998080d97668efc24d">
+        <source>The target of this rule is disabled or deleted, so it does not redirect.</source>
+        <target>Das Ziel dieser Regel ist deaktiviert oder gelöscht, daher leitet sie nicht weiter.</target>
+      </trans-unit>
+      <trans-unit id="8159fe996a9f8da671a1c5c72e754574">
+        <source>There is a newer version of %module%</source>
+        <target>Es gibt eine neuere Version von %module%</target>
+      </trans-unit>
+      <trans-unit id="aa13ad7221421c456f2777a291c4ff34">
+        <source>There is already a rule for this URL (#%id%).</source>
+        <target>Für diese URL gibt es bereits eine Regel (#%id%).</target>
+      </trans-unit>
+      <trans-unit id="ed1a054b6dc4c23aecd4545a5992bda4">
+        <source>This URL returns a 404 to visitors.</source>
+        <target>Diese URL gibt Besuchern einen 404-Fehler zurück.</target>
+      </trans-unit>
+      <trans-unit id="b8bc28264c8faf9955b6772d28a19041">
+        <source>This language does not exist.</source>
+        <target>Diese Sprache existiert nicht.</target>
+      </trans-unit>
+      <trans-unit id="a2fdc549bb5c1631d7869bf189674089">
+        <source>This product is disabled and its page returns a 404 to visitors.</source>
+        <target>Dieses Produkt ist deaktiviert und seine Seite gibt Besuchern einen 404-Fehler zurück.</target>
+      </trans-unit>
+      <trans-unit id="7dde6702b4c9c98829b9f012eaf13e27">
+        <source>This rule ends up redirecting back to itself (%hops% hops).</source>
+        <target>Diese Regel leitet am Ende auf sich selbst zurück (%hops% Sprünge).</target>
+      </trans-unit>
+      <trans-unit id="40b3c99e68e6939d6490fe51a549ac31">
+        <source>This rule leads to another rule (%hops% hops): point it straight to the final target.</source>
+        <target>Diese Regel führt zu einer anderen Regel (%hops% Sprünge): Lassen Sie sie direkt auf das endgültige Ziel zeigen.</target>
+      </trans-unit>
+      <trans-unit id="1e8a5bd9eb38c0d1843dbf046560fd09">
+        <source>This rule no longer exists.</source>
+        <target>Diese Regel existiert nicht mehr.</target>
+      </trans-unit>
+      <trans-unit id="ceae6b69b1451dbf631bad5ec9ec6cfb">
+        <source>This rule uses PRO options: it is kept, and it applies while BK SEO Redirects PRO is installed. From the list you can enable, disable or delete it. Saving changes needs PRO, unless you switch its PRO options to the free ones.</source>
+        <target>Diese Regel verwendet PRO-Optionen: Sie bleibt gespeichert und gilt, solange BK SEO Redirects PRO installiert ist. In der Liste können Sie sie aktivieren, deaktivieren oder löschen. Zum Speichern von Änderungen ist PRO nötig, es sei denn, Sie stellen ihre PRO-Optionen auf die kostenlosen um.</target>
+      </trans-unit>
+      <trans-unit id="9318ca77ddf06556c03a7be8cba31d47">
+        <source>This shop does not exist.</source>
+        <target>Dieser Shop existiert nicht.</target>
+      </trans-unit>
+      <trans-unit id="e12167aa0a7698e6ebc92b4ce3909b53">
+        <source>To</source>
+        <target>Nach</target>
+      </trans-unit>
+      <trans-unit id="be3da3f49a755b05f89a20386087a4fc">
+        <source>Turn it off to stop every rule at once without deleting any.</source>
+        <target>Schalten Sie es aus, um alle Regeln auf einmal anzuhalten, ohne eine zu löschen.</target>
+      </trans-unit>
+      <trans-unit id="f14279552080086e0a34ba6d34948ce1">
+        <source>Type a name, a reference or an ID</source>
+        <target>Geben Sie einen Namen, eine Referenz oder eine ID ein</target>
+      </trans-unit>
+      <trans-unit id="f7cfc75615d418b44d3949e5dc264dd9">
+        <source>Type of redirect</source>
+        <target>Art der Weiterleitung</target>
+      </trans-unit>
+      <trans-unit id="e6b391a8d2c4d45902a23a8b6585703d">
+        <source>URL</source>
+        <target>URL</target>
+      </trans-unit>
+      <trans-unit id="a7852c78dc463a3dda228986d39ce1cb">
+        <source>URLs that fit a pattern with *</source>
+        <target>URLs, die zu einem Muster mit * passen</target>
+      </trans-unit>
+      <trans-unit id="8e87e67b6faa56be14cfd4c203e0e347">
+        <source>URLs that return 404 most</source>
+        <target>URLs mit den meisten 404-Fehlern</target>
+      </trans-unit>
+      <trans-unit id="f7490962a2cd833416bd7684f1c42fa1">
+        <source>Uninstall %module% first.</source>
+        <target>Deinstallieren Sie zuerst %module%.</target>
+      </trans-unit>
+      <trans-unit id="e6e2f75246560155db360efda0d6d003">
+        <source>Upload the zip in Modules › Module Manager. PRO turns on as soon as it is installed.</source>
+        <target>Laden Sie die ZIP-Datei unter Module › Modul-Manager hoch. PRO ist aktiv, sobald es installiert ist.</target>
+      </trans-unit>
+      <trans-unit id="a6e3b2b65923a4840bfbe85b131710ad">
+        <source>Uses PRO options: it is kept, and it applies while BK SEO Redirects PRO is installed. You can enable, disable or delete it; editing it needs PRO.</source>
+        <target>Verwendet PRO-Optionen: Sie bleibt gespeichert und gilt, solange BK SEO Redirects PRO installiert ist. Sie können sie aktivieren, deaktivieren oder löschen; zum Bearbeiten ist PRO nötig.</target>
+      </trans-unit>
+      <trans-unit id="555d9e486fc0ff4e1fcd8486b1601c25">
+        <source>View the module</source>
+        <target>Modul ansehen</target>
+      </trans-unit>
+      <trans-unit id="ae5d01b6efa819cc7a7c05a8c57fcc2c">
+        <source>Visitors</source>
+        <target>Besucher</target>
+      </trans-unit>
+      <trans-unit id="4206a238daafc67f24ec6be31bdccd5d">
+        <source>Visitors on a 404</source>
+        <target>Besucher auf einer 404-Seite</target>
+      </trans-unit>
+      <trans-unit id="136bc1275cc8886c386e8ffc2a020811">
+        <source>Visitors who hit a 404</source>
+        <target>Besucher, die auf eine 404-Seite gestoßen sind</target>
+      </trans-unit>
+      <trans-unit id="d7e637a6e9ff116de2fa89551240a94d">
+        <source>Visits</source>
+        <target>Besuche</target>
+      </trans-unit>
+      <trans-unit id="6f9d5a3be68efbec349ed93cf6e24038">
+        <source>Visits per day: redirected, visitors who hit a 404 and bots that hit a 404</source>
+        <target>Besuche pro Tag: weitergeleitet, Besucher auf einer 404-Seite und Bots auf einer 404-Seite</target>
+      </trans-unit>
+      <trans-unit id="6375f46a450d09c2080a158e5ee280b9">
+        <source>Visits redirected</source>
+        <target>Weitergeleitete Besuche</target>
+      </trans-unit>
+      <trans-unit id="56abc507eda6d3226af192bf9b0e5d1f">
+        <source>What happens</source>
+        <target>Was passiert</target>
+      </trans-unit>
+      <trans-unit id="b11e4dac4b6ef50e7c75c1ee345b4f0b">
+        <source>When a URL starts returning 404 to real visitors, or a rule stops working, it will show up here with what to do.</source>
+        <target>Sobald eine URL echten Besuchern 404 zurückgibt oder eine Regel nicht mehr funktioniert, erscheint sie hier mit einem Hinweis, was zu tun ist.</target>
+      </trans-unit>
+      <trans-unit id="ba814ea41b47b3c1eb6fa285bed44869">
+        <source>When a visitor opens</source>
+        <target>Wenn ein Besucher diese URL öffnet</target>
+      </trans-unit>
+      <trans-unit id="9aa7b443be6c85db469a19007ad26355">
+        <source>When you delete something or change its URL</source>
+        <target>Wenn Sie etwas löschen oder seine URL ändern</target>
+      </trans-unit>
+      <trans-unit id="8a7075dd2b35f68e644386315c10f31d">
+        <source>Which URLs</source>
+        <target>Welche URLs</target>
+      </trans-unit>
+      <trans-unit id="357dc4b61216120b3ce196467c4e7a80">
+        <source>Which one</source>
+        <target>Welches Element</target>
+      </trans-unit>
+      <trans-unit id="884bc22f58c644544f9c1a558a26132d">
+        <source>Why this rule exists, for whoever reads it later</source>
+        <target>Warum es diese Regel gibt, für alle, die sie später lesen</target>
+      </trans-unit>
+      <trans-unit id="92bac46ce9ffca38d69f9cfb92ed38dd">
+        <source>With any parameters (they are dropped)</source>
+        <target>Mit beliebigen Parametern (sie werden entfernt)</target>
+      </trans-unit>
+      <trans-unit id="c56cc449499326901d6d8e9af987d127">
+        <source>With any parameters, and pass them on to the destination</source>
+        <target>Mit beliebigen Parametern, die an das Ziel weitergegeben werden</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Ja</target>
+      </trans-unit>
+      <trans-unit id="cae8d14edd025e72c59dbab6f378c95a">
+        <source>You</source>
+        <target>Sie</target>
+      </trans-unit>
+      <trans-unit id="a0d5a7fbab28816e8a58b3f5e2555c0e">
+        <source>You have version %installed%; the latest published version is %latest%.</source>
+        <target>Sie haben Version %installed%; die neueste veröffentlichte Version ist %latest%.</target>
+      </trans-unit>
+      <trans-unit id="94fec73b9a0b70305d82ca35ed37fd51">
+        <source>Your URLs over the last %days% days</source>
+        <target>Ihre URLs in den letzten %days% Tagen</target>
+      </trans-unit>
+      <trans-unit id="1465ae56f9ead218e40f392ab0e926a1">
+        <source>Your edition</source>
+        <target>Ihre Edition</target>
+      </trans-unit>
+      <trans-unit id="bac630adb4d5cd6ed5c91c79ad168a1d">
+        <source>Your module is up to date.</source>
+        <target>Ihr Modul ist auf dem neuesten Stand.</target>
+      </trans-unit>
+      <trans-unit id="324a16afc7e8e7617d4706f364ffe669">
+        <source>Your redirect rules and the 404 log will be deleted. Uninstall?</source>
+        <target>Ihre Weiterleitungsregeln und das 404-Protokoll werden gelöscht. Deinstallieren?</target>
+      </trans-unit>
+      <trans-unit id="2241bbfb8e26f6de627e38a1bbcdc9a9">
+        <source>bots</source>
+        <target>Bots</target>
+      </trans-unit>
+      <trans-unit id="f3eca21936dcd18f6f504854cd477153">
+        <source>creates these redirects on its own, the moment something is deleted or renamed.</source>
+        <target>legt diese Weiterleitungen selbst an, in dem Moment, in dem etwas gelöscht oder umbenannt wird.</target>
+      </trans-unit>
+      <trans-unit id="44fdec47036f482b68b748f9d786801b">
+        <source>days</source>
+        <target>Tage</target>
+      </trans-unit>
+      <trans-unit id="da02db1a84adbfa84baec965b2d7826e">
+        <source>no longer exists</source>
+        <target>existiert nicht mehr</target>
+      </trans-unit>
+      <trans-unit id="240bf022e685b0ee30ad9fe9e1fb5d5b">
+        <source>pattern</source>
+        <target>Muster</target>
+      </trans-unit>
+      <trans-unit id="0a7f4995e6820457caa233a0fe82bc64">
+        <source>starts with</source>
+        <target>beginnt mit</target>
+      </trans-unit>
+      <trans-unit id="9ea863c8fa5028fba929890361f0b4ea">
+        <source>suggests the right destination for each URL and fixes them all in one click.</source>
+        <target>schlägt für jede URL das richtige Ziel vor und behebt alle mit einem Klick.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

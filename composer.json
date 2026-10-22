@@ -1,0 +1,49 @@
+{
+    "name": "bkmodules/bkredirects",
+    "description": "BK SEO Redirects — redirecciones 301/302/307/410, registro de 404 y recomendaciones",
+    "type": "prestashop-module",
+    "keywords": [
+        "prestashop",
+        "seo",
+        "redirect",
+        "301",
+        "404"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "BK Modules",
+            "email": "dev@bkmodules.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "classmap": [
+            "classes/"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "classmap-authoritative": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "prestashop": {
+            "name": "bkredirects",
+            "version": "1.0.0",
+            "displayName": "BK SEO Redirects",
+            "description": "Redirecciones SEO, registro de 404 y recomendaciones",
+            "tab": "seo",
+            "bootstrap": true,
+            "compatibility": {
+                "min": "1.7.5.0",
+                "max": "9.99.99"
+            }
+        }
+    }
+}

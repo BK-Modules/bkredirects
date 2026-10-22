@@ -1,0 +1,908 @@
+/*
+ * Pantallas de BK SEO Redirects en el back office (1.7.5 → 9.x).
+ *
+ * Se apoya en el bootstrap del BO (panel, table, form-horizontal, switch) y solo añade lo que el
+ * BO no trae: cifras del panel, gráfico, recomendaciones, buscador de destino y reclamo PRO.
+ * Todo cuelga de `.bkr` para no tocar nada fuera del módulo.
+ */
+.bkr {
+    --bkr-ink: #363a41;
+    --bkr-muted: #6c7a83;
+    --bkr-line: #e3e8eb;
+    --bkr-soft: #f6f8f9;
+    --bkr-accent: #25b9d7;
+    --bkr-redirects: #1f8fae;
+    --bkr-notfound: #d9622b;
+    --bkr-bots: #8b7cc4;
+    --bkr-pro-ink: #6b5310;
+    --bkr-pro-bg: #fbf5e3;
+    --bkr-pro-line: #e4d4a3;
+}
+
+.bkr [hidden] {
+    display: none !important;
+}
+
+.bkr .bkr-mono,
+.bkr .bkr-url,
+.bkr .bkr-url-cell {
+    font-family: SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-size: 12px;
+}
+
+.bkr .bkr-lead {
+    max-width: 75ch;
+    margin: 0 0 14px;
+    color: var(--bkr-muted);
+    line-height: 1.55;
+}
+
+.bkr .bkr-num,
+.bkr .bkr-figure dd,
+.bkr-chart-tip b {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Chosen ocupa el ancho de su columna, pero un desplegable no necesita más de esto */
+.bkr .chosen-container {
+    max-width: 560px;
+}
+
+/* ---------- Reclamo PRO ---------- */
+
+.bkr-pro-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 8px;
+    margin: 0 0 14px;
+    padding: 9px 12px;
+    border: 1px solid var(--bkr-pro-line, #e4d4a3);
+    border-radius: 4px;
+    background: var(--bkr-pro-bg, #fbf5e3);
+    color: var(--bkr-pro-ink, #6b5310);
+    line-height: 1.45;
+}
+
+.bkr-pro-line--inline {
+    margin: 8px 0 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--bkr-muted, #6c7a83);
+    font-size: 12px;
+}
+
+.bkr-pro-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 1px 7px;
+    border: 1px solid var(--bkr-pro-line, #e4d4a3);
+    border-radius: 10px;
+    background: #fff;
+    color: var(--bkr-pro-ink, #6b5310);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.bkr-pro-tag i {
+    font-size: 10px;
+}
+
+.bkr-pro-tag--heading {
+    margin-left: 8px;
+    vertical-align: 1px;
+    text-transform: none;
+}
+
+.bkr-pro-tag--mini {
+    margin-left: 4px;
+    padding: 0 6px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.bkr-pro-tag--on {
+    border-color: var(--bkr-pro-ink, #6b5310);
+    background: var(--bkr-pro-ink, #6b5310);
+    color: #fff;
+}
+
+.bkr .bkr-pro-link {
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.bkr-locked-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: var(--bkr-muted);
+}
+
+.bkr-locked-list li {
+    padding: 4px 0;
+}
+
+.bkr-locked-list i {
+    width: 18px;
+}
+
+/* ---------- Panel: cifras ---------- */
+
+/* Selector de periodo a la derecha de la cabecera del panel (alta fija en 1.7, flexible en 8/9) */
+.bkr .panel-heading .bkr-periods {
+    display: inline-flex;
+    float: right;
+    gap: 4px;
+}
+
+.bkr .panel-heading .bkr-periods .btn {
+    margin: 0;
+    padding: 2px 9px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: none;
+}
+
+.bkr .panel-heading .bkr-periods .btn.active {
+    border-color: var(--bkr-accent);
+    background: var(--bkr-accent);
+    color: #fff;
+    box-shadow: none;
+}
+
+.bkr-figures {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 0 18px;
+    border: 1px solid var(--bkr-line);
+    border-radius: 4px;
+}
+
+.bkr-figure {
+    flex: 1 1 160px;
+    padding: 12px 16px;
+    border-right: 1px solid var(--bkr-line);
+}
+
+.bkr-figure:last-child {
+    border-right: 0;
+}
+
+.bkr-figure dt {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 0 4px;
+    color: var(--bkr-muted);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bkr-figure dd {
+    margin: 0;
+    color: var(--bkr-ink);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.bkr-figure dd small {
+    margin-left: 6px;
+    color: var(--bkr-muted);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.bkr-figure--quiet {
+    background: var(--bkr-soft);
+}
+
+.bkr-swatch {
+    display: inline-block;
+    flex: 0 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.bkr-swatch--redirects { background: var(--bkr-redirects, #1f8fae); }
+.bkr-swatch--notfound { background: var(--bkr-notfound, #d9622b); }
+.bkr-swatch--bots { background: var(--bkr-bots, #8b7cc4); }
+
+/* ---------- Panel: gráfico ---------- */
+
+.bkr-chart {
+    position: relative;
+    margin: 0 0 6px;
+    padding: 0 0 26px;
+}
+
+.bkr-chart-svg {
+    display: block;
+    width: 100%;
+    height: 240px;
+    overflow: visible;
+}
+
+.bkr-chart-grid line {
+    stroke: var(--bkr-line);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+}
+
+.bkr-chart-line {
+    fill: none;
+    stroke-width: 2;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    vector-effect: non-scaling-stroke;
+}
+
+.bkr-chart-line--redirects { stroke: var(--bkr-redirects); }
+.bkr-chart-line--notfound { stroke: var(--bkr-notfound); }
+.bkr-chart-line--bots { stroke: var(--bkr-bots); stroke-dasharray: 4 3; }
+
+.bkr-chart-area {
+    fill: var(--bkr-redirects);
+    opacity: .08;
+}
+
+.bkr-chart-cursor {
+    stroke: var(--bkr-muted);
+    stroke-width: 1;
+    vector-effect: non-scaling-stroke;
+    opacity: 0;
+}
+
+.bkr-chart.is-hovering .bkr-chart-cursor {
+    opacity: .5;
+}
+
+.bkr-chart-hits rect {
+    fill: transparent;
+    cursor: crosshair;
+}
+
+.bkr-chart-yaxis span,
+.bkr-chart-xaxis span {
+    position: absolute;
+    color: var(--bkr-muted);
+    font-size: 11px;
+    line-height: 1;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+/* El SVG mide 240px de alto: las etiquetas del eje se colocan sobre esa misma caja */
+.bkr-chart-yaxis {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.4%;
+    height: 240px;
+}
+
+.bkr-chart-yaxis span {
+    right: 6px;
+    transform: translateY(-50%);
+}
+
+.bkr-chart-xaxis {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    height: 14px;
+}
+
+.bkr-chart-xaxis span {
+    transform: translateX(-50%);
+}
+
+.bkr-chart-empty {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    color: var(--bkr-muted);
+    text-align: center;
+}
+
+.bkr-chart-tip {
+    position: absolute;
+    top: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 170px;
+    padding: 8px 10px;
+    border: 1px solid var(--bkr-line);
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 4px 14px rgba(30, 40, 50, .12);
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.bkr-chart-tip span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--bkr-muted);
+}
+
+.bkr-chart-tip b {
+    margin-left: auto;
+    color: var(--bkr-ink);
+}
+
+.bkr-chart-table summary {
+    display: inline-block;
+    color: var(--bkr-accent);
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bkr-chart-table[open] summary {
+    margin-bottom: 8px;
+}
+
+.bkr-chart-table .table {
+    max-width: 640px;
+}
+
+/* ---------- Recomendaciones ---------- */
+
+.bkr-recs-table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.bkr-col-check {
+    width: 28px;
+}
+
+/* Las acciones no se parten (nowrap): el resto de columnas cede ancho para que la tabla quepa en 1280. */
+.bkr-rec-what {
+    min-width: 190px;
+}
+
+.bkr-rec-what strong {
+    font-weight: 600;
+}
+
+.bkr-rec-reason {
+    display: block;
+    margin-top: 2px;
+    color: var(--bkr-muted);
+    font-size: 12px;
+}
+
+.bkr-sev {
+    display: inline-block;
+    min-width: 58px;
+    margin-right: 6px;
+    padding: 1px 7px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: center;
+}
+
+.bkr-sev--high { background: #fbe4e1; color: #a5281b; }
+.bkr-sev--medium { background: #fdf0d9; color: #8a5300; }
+.bkr-sev--low { background: #edf1f3; color: #4f5d65; }
+
+.bkr .bkr-url,
+.bkr .bkr-target {
+    max-width: 0;
+    width: 30%;
+}
+
+.bkr-suggestion {
+    min-width: 180px;
+}
+
+.bkr .bkr-url > span,
+.bkr .bkr-url > a,
+.bkr .bkr-target > span {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bkr-bots {
+    display: block;
+    white-space: nowrap;
+    color: var(--bkr-muted);
+    font-size: 11px;
+}
+
+.bkr-date {
+    white-space: nowrap;
+}
+
+.bkr-suggestion span {
+    display: block;
+}
+
+.bkr-score {
+    color: var(--bkr-muted);
+}
+
+/* En flex la celda mide de verdad lo que ocupan sus botones: la tabla nunca los saca de la card. */
+.bkr-actions-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4px;
+    white-space: nowrap;
+}
+
+.bkr-actions-row > * {
+    flex-shrink: 0;
+}
+
+.bkr .bkr-dismiss {
+    color: var(--bkr-muted);
+}
+
+.bkr-bulk {
+    padding-top: 12px;
+    border-top: 1px solid var(--bkr-line);
+}
+
+.bkr-empty {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px 4px;
+}
+
+.bkr-empty i {
+    color: #4f9d69;
+    font-size: 22px;
+}
+
+.bkr-empty p {
+    max-width: 70ch;
+    margin: 0;
+    line-height: 1.55;
+}
+
+.bkr-compact > tbody > tr > td {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    vertical-align: middle;
+}
+
+/* ---------- Reglas: listado y formulario ---------- */
+
+.bkr-url-cell {
+    display: inline-block;
+    max-width: 260px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+/*
+ * Listado de reglas (HelperList, 1.7.5 → 9): la tabla cabe en la card desde 1280 px sin scroll
+ * horizontal. Las columnas fijas llevan su ancho; origen y destino se quedan con el resto
+ * (max-width: 0 deja que la celda encoja por debajo de su contenido) y la URL se corta con
+ * puntos suspensivos, entera en el title. Las acciones de la fila son solo iconos.
+ */
+table.bkredirects_rule td.bkr-col-url,
+table.bkredirects_rule th.bkr-col-url {
+    width: 30%;
+    max-width: 0;
+}
+
+table.bkredirects_rule td.bkr-col-url .bkr-url-cell {
+    display: block;
+    max-width: 100%;
+}
+
+table.bkredirects_rule .filter select,
+table.bkredirects_rule .filter input {
+    width: 100%;
+    min-width: 0;
+}
+
+table.bkredirects_rule .bkr-col-origin {
+    width: 110px;
+}
+
+table.bkredirects_rule .bkr-col-date {
+    width: 90px;
+    white-space: nowrap;
+}
+
+table.bkredirects_rule .fixed-width-sm {
+    width: 64px;
+}
+
+table.bkredirects_rule td:last-child .btn-group-action .btn,
+table.bkredirects_rule td:last-child .btn-group .btn {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+table.bkredirects_rule td:last-child .btn i,
+table.bkredirects_rule td:last-child .btn .material-icons {
+    font-size: 14px;
+}
+
+table.bkredirects_rule td:last-child .btn .caret {
+    margin-left: 0;
+}
+
+table.bkredirects_rule td:last-child .dropdown-menu {
+    font-size: 13px;
+}
+
+.bkr-tag {
+    display: inline-block;
+    padding: 0 6px;
+    border: 1px solid #d6dde1;
+    border-radius: 3px;
+    color: #4f5d65;
+    font-size: 11px;
+    line-height: 16px;
+    vertical-align: middle;
+}
+
+.bkr-tag--pro {
+    border-color: #e4d4a3;
+    background: #fbf5e3;
+    color: #6b5310;
+}
+
+.bkr .bkr-form-step {
+    margin: 22px 0 14px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--bkr-line);
+    color: var(--bkr-ink);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bkr .bkr-form-step:first-of-type {
+    margin-top: 4px;
+}
+
+.bkr .bkr-base {
+    max-width: 280px;
+    overflow: hidden;
+    color: var(--bkr-muted);
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+
+.bkr .bkr-error {
+    font-weight: 600;
+}
+
+.bkr .radio.disabled label {
+    color: var(--bkr-muted);
+}
+
+.bkr-finder {
+    position: relative;
+}
+
+.bkr-finder-box {
+    max-width: 560px;
+}
+
+.bkr-finder-chosen {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    max-width: 560px;
+    padding: 6px 4px 6px 12px;
+    border: 1px solid #c7d6db;
+    border-radius: 4px;
+    background: var(--bkr-soft);
+}
+
+.bkr-finder.has-value .bkr-finder-chosen {
+    display: flex;
+}
+
+.bkr-finder.has-value .bkr-finder-search {
+    display: none;
+}
+
+.bkr-finder-label {
+    flex: 1 1 auto;
+    font-weight: 600;
+}
+
+.bkr-finder-list {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-width: 560px;
+    max-height: 300px;
+    margin: 2px 0 0;
+    padding: 4px 0;
+    overflow-y: auto;
+    border: 1px solid #c7d6db;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(30, 40, 50, .12);
+    list-style: none;
+}
+
+.bkr-finder-option,
+.bkr-finder-empty {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 6px 12px;
+}
+
+.bkr-finder-option {
+    cursor: pointer;
+}
+
+.bkr-finder-option small,
+.bkr-finder-empty {
+    color: var(--bkr-muted);
+}
+
+.bkr-finder-option:hover,
+.bkr-finder-option.is-active {
+    background: #e9f7fa;
+}
+
+.bkr-gone-note {
+    overflow: hidden;
+    margin-bottom: 12px;
+}
+
+/* ---------- Licencia y ayuda ---------- */
+
+.bkr-edition-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.bkr-edition-name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 4px;
+    color: var(--bkr-ink);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bkr-edition-meta {
+    margin: 0;
+    color: var(--bkr-muted);
+}
+
+.bkr .bkr-subtitle {
+    margin: 18px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bkr-steps {
+    max-width: 75ch;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.bkr-steps li {
+    margin-bottom: 10px;
+    padding-left: 4px;
+    line-height: 1.55;
+}
+
+.bkr-steps strong,
+.bkr-steps span {
+    display: block;
+}
+
+/* Panel «Más de BK Modules» (revisión 2 del estándar bk*) */
+.bkr-info-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+}
+
+.bkr-info-title {
+    margin: 1.25rem 0 .75rem;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bk-catalog,
+.bk-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 14px;
+}
+
+/* El tema del BO subraya todo enlace dentro de .content-div con una cadena de :not() imposible de
+   igualar; estas tarjetas son bloques, no enlaces de texto. */
+.bk-catalog a.bk-catalog-card,
+.bk-catalog a.bk-catalog-card:hover,
+.bk-catalog a.bk-catalog-card:focus,
+.bk-posts a.bk-post-card,
+.bk-posts a.bk-post-card:hover,
+.bk-posts a.bk-post-card:focus {
+    text-decoration: none !important;
+}
+
+.bk-catalog-card,
+.bk-post-card {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid #e7ebed;
+    border-radius: 8px;
+    background: #fff;
+    color: inherit;
+    transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.bk-catalog-card:hover,
+.bk-post-card:hover {
+    border-color: #b9e4ee;
+    box-shadow: 0 6px 18px rgba(37, 185, 215, .14);
+}
+
+.bk-catalog-media {
+    display: flex;
+    flex: 0 0 120px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-right: 1px solid #eef1f3;
+    background: #f4f7f8;
+}
+
+.bk-catalog-media img {
+    max-width: 100%;
+    max-height: 96px;
+    object-fit: contain;
+}
+
+.bk-post-thumb {
+    flex: 0 0 180px;
+    align-self: center;
+    margin: 12px 0 12px 12px;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #eef2f4;
+}
+
+.bk-post-thumb img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bk-catalog-body,
+.bk-post-body {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 0;
+    padding: 12px 16px;
+}
+
+.bk-catalog-name,
+.bk-post-title {
+    color: #2b2f36;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.bk-catalog-desc,
+.bk-post-summary {
+    flex: 1 1 auto;
+    color: #6c7a83;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.bk-catalog-more,
+.bk-post-date {
+    color: #1f8fae;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.bkr-status {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.25rem;
+    padding: 12px 16px;
+    border: 1px solid #e7ebed;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.bkr-status-icon {
+    flex: 0 0 26px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+}
+
+.bkr-status-text {
+    flex: 1 1 auto;
+}
+
+.bkr-status-current .bkr-status-icon { background: #4f9d69; }
+.bkr-status-outdated { background: #fff8e8; }
+.bkr-status-outdated .bkr-status-icon { background: #d38b00; }
+.bkr-status-unknown .bkr-status-icon { background: #8a979e; }
+
+.bkr-update {
+    margin-bottom: 16px;
+}
+
+.bkr-update-title {
+    margin: 0 0 4px;
+    font-weight: 600;
+}
+
+/* ---------- Pantallas estrechas ---------- */
+
+@media (max-width: 767px) {
+    .bkr-figure {
+        flex-basis: 50%;
+        border-bottom: 1px solid var(--bkr-line);
+    }
+
+    .bkr .bkr-url,
+    .bkr .bkr-target {
+        max-width: 220px;
+    }
+
+    .bkr .panel-heading .bkr-periods {
+        float: none !important;
+        display: flex;
+        margin-top: 6px;
+    }
+
+    .bk-catalog,
+    .bk-posts {
+        grid-template-columns: 1fr;
+    }
+}
