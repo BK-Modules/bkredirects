@@ -57,7 +57,7 @@ That's all: no file to edit, no cache to clear.
 
 The free edition fixes your 404s by hand, one rule at a time, with no limit and no expiry. PRO is for when you don't want to have to remember: it redirects on its own when you delete something or change a URL, brings in the redirects you already have and handles hundreds of addresses with one rule.
 
-| | 🎁 Free | 👑 PRO |
+| | 🎁&nbsp;Free | 👑&nbsp;PRO |
 | :--- | :---: | :---: |
 | **Redirects** | | |
 | Manual rules, no limit: 301, 302, 307 and 410 to a product, category, page or any URL | ✅ | ✅ |
